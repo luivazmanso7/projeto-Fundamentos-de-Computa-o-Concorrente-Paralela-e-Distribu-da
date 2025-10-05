@@ -1,6 +1,15 @@
-# projeto-Fundamentos-de-Computa-o-Concorrente-Paralela-e-Distribu-da
+Metadata-Version: 2.4
+Name: distribcalc
+Version: 0.1.0
+Summary: Distributed prime computation demo with concurrency and parallelism
+Author: Projeto Distribuído
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: reportlab>=3.6.12
+Provides-Extra: dev
+Requires-Dist: pytest>=7.4; extra == "dev"
 
-## DistribCalc – Arquitetura Distribuída para Cálculo de Primos
+# DistribCalc – Arquitetura Distribuída para Cálculo de Primos
 
 Este projeto demonstra uma arquitetura cliente-servidor desenvolvida em Python, explorando conceitos de sistemas distribuídos, concorrência e paralelismo. O servidor aceita múltiplas conexões simultâneas via TCP, delega computações CPU-bound para um pool de processos e mantém métricas sincronizadas com mecanismos de exclusão mútua. O cliente fornece uma interface interativa que envia comandos e apresenta respostas em tempo real utilizando uma thread dedicada para escuta.
 
@@ -30,7 +39,7 @@ pip install -e .
 Para incluir ferramentas de desenvolvimento (pytest), utilize:
 
 ```bash
-pip install -e '.[dev]'
+pip install -e .[dev]
 ```
 
 ## Execução do Servidor
@@ -83,8 +92,4 @@ PYTHONPATH=src python -m distribcalc.report
 - **Sincronização**: `threading.Lock` garante consistência nas métricas do servidor.
 - **Comunicação**: Mensagens JSON bidirecionais sobre sockets TCP.
 
-## Próximos Passos Sugeridos
 
-- Adicionar autenticação e autorização das requisições.
-- Persistir métricas do servidor em banco de dados para análise histórica.
-- Automatizar implantação com contêineres e orquestração (Docker + Compose).

@@ -1,0 +1,15 @@
+README.md
+pyproject.toml
+src/distribcalc/__init__.py
+src/distribcalc/client.py
+src/distribcalc/protocol.py
+src/distribcalc/report.py
+src/distribcalc/server.py
+src/distribcalc/tasks.py
+src/distribcalc.egg-info/PKG-INFO
+src/distribcalc.egg-info/SOURCES.txt
+src/distribcalc.egg-info/dependency_links.txt
+src/distribcalc.egg-info/entry_points.txt
+src/distribcalc.egg-info/requires.txt
+src/distribcalc.egg-info/top_level.txt
+tests/test_tasks.py
