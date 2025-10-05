@@ -1,4 +1,0 @@
-[console_scripts]
-distribcalc-client = distribcalc.client:run_client
-distribcalc-report = distribcalc.report:generate_report
-distribcalc-server = distribcalc.server:run_server
