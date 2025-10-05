@@ -66,16 +66,9 @@ source .venv/bin/activate
 PYTHONPATH=src pytest
 ```
 
-## Geração do Artigo em PDF
 
-O artigo em `docs/artigo.pdf` pode ser regenerado a qualquer momento:
 
-```bash
-source .venv/bin/activate
-PYTHONPATH=src python -m distribcalc.report
-```
-
-## Como a Arquitetura Atende aos Requisitos
+## a Arquitetura
 
 - **Arquitetura distribuída**: Servidor TCP multi-thread + múltiplos clientes.
 - **Concorrência**: Threads independentes para cada conexão de cliente.
