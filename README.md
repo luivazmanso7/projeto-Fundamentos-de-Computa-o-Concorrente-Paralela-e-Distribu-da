@@ -81,3 +81,6 @@ PYTHONPATH=src pytest
 - Adicionar autenticação e autorização das requisições.
 - Persistir métricas do servidor em banco de dados para análise histórica.
 - Automatizar implantação com contêineres e orquestração (Docker + Compose).
+
+
+feito por: Lui manso, Rodrigo Leal e Gabriel Antonio 
